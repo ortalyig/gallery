@@ -1,0 +1,538 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@400;800&display=swap');
+
+body {
+    direction: rtl;
+    font-size: 12pt;
+    font-family: Assistant;
+    background-image: url('../photos/background/334177-PA0JS9-388-01.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+}
+
+
+
+.home-header {
+    background-image: url('../photos/background/green-matcha.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 80vh;
+}
+
+
+.center h1 {
+    color: #BDD684;
+    font-size: 80pt;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.8);
+    margin: 150px;
+    margin-top: 130px;
+}
+
+
+.center h2 {
+    margin: 150px;
+}
+
+
+/*nav bar*/
+#menu-bar {
+    background-color: #202426;
+    text-align: center;
+}
+
+    #menu-bar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    #menu-bar li {
+        display: inline-block;
+        position: relative;
+        font-family: Assistant;
+    }
+
+        #menu-bar li a {
+            display: block;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: white;
+        }
+
+        #menu-bar li:hover {
+            background-color: #324001;
+        }
+
+            #menu-bar li:hover > ul {
+                display: block;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+            }
+
+    #menu-bar ul ul {
+        display: none;
+        background-color: #202426;
+    }
+
+        #menu-bar ul ul li {
+            display: block;
+            border-bottom: 1px dotted white;
+        }
+
+            #menu-bar ul ul li a {
+                padding: 10px;
+                color: white;
+            }
+
+
+
+/*homePage*/
+
+#welcome {
+    text-align: center;
+}
+
+    #welcome p {
+        margin: 10px 20px 30px 10px;
+        color: black;
+        font-size: 15pt;
+    }
+
+    #welcome h2 {
+        font-size: 30pt;
+        color: #025939;
+    }
+
+main {
+    text-align: center;
+}
+
+
+.img-gallery {
+    margin: 0;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+    .img-gallery a {
+        display: inline-block;
+        position: relative;
+    }
+
+    .img-gallery img {
+        width: 250px;
+        height: auto;
+        margin: 0 10px;
+        transition: transform 0.3s ease;
+    }
+
+        .img-gallery img:hover {
+            transform: scale(1.1);
+            filter: brightness(70%);
+        }
+
+.img-caption {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    color: #F2CB05;
+    padding: 10px;
+    text-align: center;
+    font-family: Assistant;
+    font-size: 30pt;
+    font-weight: bold;
+    text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5);
+}
+
+.img-link:hover .img-caption {
+    display: block;
+}
+
+
+
+/* tea Types*/
+.teaTypes {
+    text-align: center;
+    width: 100%;
+    font-size: 30pt;
+    display: inline-block;
+    background-color: #738280;
+    padding: 20px;
+}
+
+    .teaTypes h1 {
+        text-align: center;
+        margin-top: 40px;
+        font-size: 46px;
+        color: white;
+        letter-spacing: 2px;
+        font-family: Assistant;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        height: 20px;
+    }
+
+/* tea types gallery */
+
+.container {
+    display: flex;
+}
+
+.image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .image img {
+        height: 100%;
+        width: 100%;
+    }
+
+.text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #C5D3D9;
+    color: black;
+    text-align: center;
+    font-family: Assistant;
+}
+
+
+
+/*
+/tea in japan/*/
+
+.teaJapan-headline {
+    text-align: center;
+    padding: 10px;
+    background-color: #738280;
+}
+
+    .teaJapan-headline h1 {
+        font-size: 40pt;
+        color: white;
+        margin: 20px;
+        font-weight: bold;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+.contentJapan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+    .contentJapan img {
+        width: 50%;
+        height: auto;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+
+    .contentJapan h3 {
+        font-size: 25pt;
+        font-weight: bold;
+        padding: 10px;
+        color: #025939;
+        font-weight: bold;
+    }
+
+    .contentJapan p {
+        margin: 0;
+        font-size: 18px;
+        line-height: 1.5;
+        color: #010101;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+
+
+/*******  contact-us ************/
+
+.contact-headline {
+    text-align: center;
+}
+
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1);
+}
+
+    .form-container label {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .form-container .input-style {
+        width: 100%;
+        padding: 10px;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+    }
+
+    .form-container .btn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+    }
+
+    .form-container button :hover {
+        background-color: #45a049;
+    }
+
+
+/*map*/
+
+.map-headline h1 {
+    font-size: 50px;
+}
+
+.map-content {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+    .map-content h2 {
+        font-size: 20pt;
+        color: #025939;
+        margin-bottom: 10px;
+    }
+    .map-content h2 a{
+        font-size: 20pt;
+        color: #025939;
+        margin-bottom: 10px;
+    }
+
+    .map-content ul {
+        list-style-type: none;
+    }
+
+    .map-content li {
+        margin-bottom: 5px;
+        margin-left: 50px;
+    }
+
+    .map-content a {
+        text-decoration: none;
+        color: black;
+    }
+
+        .map-content a:hover {
+            text-decoration: underline;
+        }
+
+/*aboutPage*/
+
+.about {
+    color: black;
+    margin: 20px;
+}
+
+.about-headline {
+    margin-top: 40px;
+    margin: 20px;
+    font-size: 20px;
+    color: black;
+}
+.about h2 {
+    color: #025939;
+}
+
+.about ul {
+    list-style-image: url('../photos/logo/Untitled-3-01.png');
+}
+
+.about a {
+    color: black;
+    text-decoration: none;
+}
+
+    .about a:hover {
+        text-decoration: underline;
+    }
+
+.Hit {
+    text-align: center;
+}
+
+    .Hit img {
+        width: 200px;
+    }
+
+
+.noActive {
+    cursor: not-allowed;
+    color: gray;
+}
+
+
+/* breadcrumbs menu  */
+
+.breadcrumbs ol {
+    position: absolute;
+    align-items: center;
+    text-align: right;
+    padding: 0;
+    margin: 0;
+}
+
+    .breadcrumbs ol li {
+        display: inline-block;
+    }
+
+.breadcrumbs a {
+    color: #333;
+}
+
+.breadcrumbs ol li:after {
+    content: "<";
+}
+
+.breadcrumbs ol li:last-child:after {
+    content: "";
+}
+
+/*footer*/
+footer {
+    background-color: #202426;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+.footer-content a {
+    margin-left: 20px;
+    font-size: 12pt;
+    color: white;
+    text-decoration: none;
+}
+
+
+/*gallery*/
+.slideshow-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.slideshow-gallery {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.photo-slide {
+    display:none;
+    text-align: center;
+}
+
+    .photo-slide img {
+        max-width: 100%;
+        height: auto;
+    }
+
+#image-text {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: black;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: bold;
+
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.prev {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    right: 95%;
+    font-size:30px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    left: 95%;
+    font-size: 30px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+.image-number {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: black;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: bold;
+ 
+}
+
+.bottom-gallery {
+    display: flex;
+    justify-content: center;
+}
+
+    .bottom-gallery img {
+        width: 80px;
+        height: 60px;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+
+
+.bottom-img {
+    opacity: 0.6;
+}
+
+    .active,
+    .bottom-img:hover {
+        opacity: 1;
+    }
